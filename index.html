@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Test</title>
+
+    <script src="js/modernizr.js"></script>
+    <script async="true" src="js/picturefill.min.js"></script>
+    <script>
+        // Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
+        document.createElement( "picture" );
+    
+    </script>
+
+    <!--[if (gt IE 8) | (IEMobile)]><!-->
+    <link rel="stylesheet" href="css/step2.css">
+    <!--<![endif]-->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+
+</head>
+<body>
+
+<div id="outer-wrap">
+<div id="inner-wrap">
+
+    <header id="top" role="banner">
+        <div class="block">
+            <h1 class="block-title">Test</h1>
+            <a class="nav-btn" href="#menubar">Expanding Container</a>
+            <a id="nav-open-btn">Off Canvas Menu</a>
+        </div>
+    </header>
+
+    <nav id="menubar" role="navigation">
+        <div class="block">
+            <ul>
+                <li>
+                    <a href="#">Link 1</a>
+                </li><!--
+             --><li>
+                    <a href="#">Link 2</a>
+                </li><!--
+             --><li>
+                    <a href="#">Awkward Long link</a>
+                </li><!--
+             --><li>
+                    <a href="#">Link 3</a>
+                </li><!--
+             --><li>
+                    <a href="#">Link 4</a>
+                </li>
+            </ul>
+            <div class="close">
+                <a class="close-btn" href="#top">Return to Content</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="nav" role="navigation">
+        <div class="block">
+            <ul>
+                <li>
+                    <a href="#">Item 1</a>
+                </li><!--
+             --><li>
+                    <a href="#">Item 2</a>
+                </li><!--
+             --><li>
+                    <a href="#">Item 3</a>
+                </li><!--
+             --><li>
+                    <a href="#">Item 4</a>
+                </li><!--
+             --><li>
+                    <a href="#">Link 5</a>
+                </li><!--
+             --><li>
+                    <a href="#">Link 6</a>
+                </li><!--
+                --><li>
+                    <a href="#">Link 7</a>
+                </li><!--
+             --><li>
+                    <a href="#">Link 8</a>
+                </li>
+            </ul>
+            <div id="close">
+                <a id="nav-close-btn">Return to Content</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" role="main">
+        <div class="container">
+            <div id="content">
+              <div class="row">
+                <article class="block prose">
+                    <div class="four columns">
+                        <h2>Headline</h2>
+
+                        <p>Bacon ipsum dolor amet tenderloin ham picanha leberkas beef ribs strip steak short loin sausage beef biltong. Spare ribs picanha capicola shankle t-bone pig. Ground round pancetta tri-tip pork, filet mignon drumstick spare ribs.</p>
+                    </div>
+                    <div class="four columns">
+                        <h2>Headline</h2>
+                        <p>Bacon ipsum dolor amet tenderloin ham picanha leberkas beef ribs strip steak short loin sausage beef biltong. Spare ribs picanha capicola shankle t-bone pig. Ground round pancetta tri-tip pork, filet mignon drumstick spare ribs.</p>
+                    </div>
+                    <div class="four columns">
+                        <h2>Headline</h2>
+                        <p>Bacon ipsum dolor amet tenderloin ham picanha leberkas beef ribs strip steak short loin sausage beef biltong. Spare ribs picanha capicola shankle t-bone pig. Ground round pancetta tri-tip pork, filet mignon drumstick spare ribs.</p>
+                    </div>
+                </article>
+              </div>
+            </div>
+
+          <!-- columns should be the immediate child of a .row -->
+          <div id="content-images">
+              <div class="row">
+                <div class="six columns">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="img/270x180.png" media="(min-width:320px) and (max-width: 374px) ">
+                        <source srcset="img/315x210.png" media="(min-width:375px) and (max-width: 549px) ">
+                        <source srcset="img/200x133.png" media="(min-width:550px) and (max-width: 667px) ">
+                        <source srcset="img/250x157.png" media="(min-width:668px) and (max-width: 796px) ">
+                        <source srcset="img/300x200.png" media="(min-width:797px) and (max-width: 980px) ">   
+                        <source srcset="img/375x250.png" media="(min-width:981px) and (max-width: 1240px) ">
+                        <source srcset="img/430x287.png" media="(min-width:1240px) and (max-width: 1600px) ">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="img/430x287.png">
+                    </picture>
+                </div>
+                <div class="six columns">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="img/270x180.png" media="(min-width:320px) and (max-width: 374px) ">
+                        <source srcset="img/315x210.png" media="(min-width:375px) and (max-width: 549px) ">
+                        <source srcset="img/200x133.png" media="(min-width:550px) and (max-width: 667px) ">
+                        <source srcset="img/250x157.png" media="(min-width:668px) and (max-width: 796px) ">
+                        <source srcset="img/300x200.png" media="(min-width:797px) and (max-width: 980px) ">   
+                        <source srcset="img/375x250.png" media="(min-width:981px) and (max-width: 1240px) ">
+                        <source srcset="img/430x287.png" media="(min-width:1240px) and (max-width: 1600px) ">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="img/430x287.png">
+                    </picture>
+                </div>
+              </div>
+
+              <!-- just use a number and class 'column' or 'columns' -->
+              <div class="row">
+                <div class="six columns">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="img/270x180.png" media="(min-width:320px) and (max-width: 374px) ">
+                        <source srcset="img/315x210.png" media="(min-width:375px) and (max-width: 549px) ">
+                        <source srcset="img/200x133.png" media="(min-width:550px) and (max-width: 667px) ">
+                        <source srcset="img/250x157.png" media="(min-width:668px) and (max-width: 796px) ">
+                        <source srcset="img/300x200.png" media="(min-width:797px) and (max-width: 980px) ">   
+                        <source srcset="img/375x250.png" media="(min-width:981px) and (max-width: 1240px) ">
+                        <source srcset="img/430x287.png" media="(min-width:1240px) and (max-width: 1600px) ">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="img/430x287.png">
+                    </picture>
+                </div>
+                <div class="six columns">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="img/270x180.png" media="(min-width:320px) and (max-width: 374px) ">
+                        <source srcset="img/315x210.png" media="(min-width:375px) and (max-width: 549px) ">
+                        <source srcset="img/200x133.png" media="(min-width:550px) and (max-width: 667px) ">
+                        <source srcset="img/250x157.png" media="(min-width:668px) and (max-width: 796px) ">
+                        <source srcset="img/300x200.png" media="(min-width:797px) and (max-width: 980px) ">   
+                        <source srcset="img/375x250.png" media="(min-width:981px) and (max-width: 1240px) ">
+                        <source srcset="img/430x287.png" media="(min-width:1240px) and (max-width: 1600px) ">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="img/430x287.png">
+                    </picture>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="six columns">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="img/270x180.png" media="(min-width:320px) and (max-width: 374px) ">
+                        <source srcset="img/315x210.png" media="(min-width:375px) and (max-width: 549px) ">
+                        <source srcset="img/200x133.png" media="(min-width:550px) and (max-width: 667px) ">
+                        <source srcset="img/250x157.png" media="(min-width:668px) and (max-width: 796px) ">
+                        <source srcset="img/300x200.png" media="(min-width:797px) and (max-width: 980px) ">   
+                        <source srcset="img/375x250.png" media="(min-width:981px) and (max-width: 1240px) ">
+                        <source srcset="img/430x287.png" media="(min-width:1240px) and (max-width: 1600px) ">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="img/430x287.png">
+                    </picture>
+                </div>
+                <div class="six columns">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="img/270x180.png" media="(min-width:320px) and (max-width: 374px) ">
+                        <source srcset="img/315x210.png" media="(min-width:375px) and (max-width: 549px) ">
+                        <source srcset="img/200x133.png" media="(min-width:550px) and (max-width: 667px) ">
+                        <source srcset="img/250x157.png" media="(min-width:668px) and (max-width: 796px) ">
+                        <source srcset="img/300x200.png" media="(min-width:797px) and (max-width: 980px) ">   
+                        <source srcset="img/375x250.png" media="(min-width:981px) and (max-width: 1240px) ">
+                        <source srcset="img/430x287.png" media="(min-width:1240px) and (max-width: 1600px) ">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img src="img/430x287.png">
+                    </picture>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <footer role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <div id="footer">
+                            <p>Test done by Tommaso Villa for the application as Front End Developer in William Hill</a></p>
+                            <p>Copyright © <a href="http://tommasovilla.com/">Tommaso Villa</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+    </div>
+
+
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap-->
+
+
+<script src="js/main.js"></script>
+<script src="js/mobify.min.js"></script>
+
+</body>
+</html>
