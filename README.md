@@ -18,3 +18,5 @@ Content area with:
 
 	•	A grid of images (at least 8, no upper limit) with random ‘feature’ images that are larger than the standard images 
 	•	3 columns of text (lorem ipsum is fine for this) when screen width allows, and a suitable display when the screen width is too narrow
+
+	You can see it here: http://tommasovilla.com/test/index.html
